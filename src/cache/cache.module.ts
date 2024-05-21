@@ -3,6 +3,9 @@ import { CacheService } from "./cache.service";
 import { CacheModule } from "@nestjs/cache-manager";
 import { redisStore } from "cache-manager-redis-yet";
 import { RedisClientOptions } from "redis";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 @Module({
 	imports: [

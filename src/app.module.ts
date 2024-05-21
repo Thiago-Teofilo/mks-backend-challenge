@@ -8,6 +8,9 @@ import { AppCacheModule } from "./cache/cache.module";
 import { AuthModule } from "./auth/auth.module";
 import { APP_GUARD } from "@nestjs/core";
 import { AuthGuard } from "./auth/auth.guard";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 @Module({
 	imports: [
