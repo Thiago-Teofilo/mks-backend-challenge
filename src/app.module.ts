@@ -27,6 +27,9 @@ dotenv.config();
 			database: process.env.DATABASE_NAME ?? "mks",
 			entities: [__dirname + "/**/*.entity{.ts,.js}"],
 			synchronize: true,
+			extra: {
+				ssl: true,
+			},
 		}),
 	],
 	controllers: [AppController],
