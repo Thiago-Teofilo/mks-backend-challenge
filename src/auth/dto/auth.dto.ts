@@ -8,7 +8,7 @@ export class AuthDto {
 	email: string;
 
 	@ApiProperty({
-		example: "cada0789",
+		example: "Cada0789",
 		description: "Senha de um usuário previamente criado que será autenticado",
 	})
 	password: string;
