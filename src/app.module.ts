@@ -28,7 +28,7 @@ dotenv.config();
 			entities: [__dirname + "/**/*.entity{.ts,.js}"],
 			synchronize: true,
 			extra: {
-				ssl: true,
+				ssl: process.env.NODE_ENV === "production",
 			},
 		}),
 	],

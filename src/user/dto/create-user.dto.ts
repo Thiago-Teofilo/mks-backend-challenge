@@ -7,7 +7,7 @@ export class CreateUserDto {
 	name: string;
 
 	@ApiProperty({
-		example: "johndoe@example.com",
+		example: "johndoe23@example.com",
 		description: "Email que será utilizado na autenticação. Não poderá haver emails iguais em usuários diferentes",
 	})
 	email: string;
